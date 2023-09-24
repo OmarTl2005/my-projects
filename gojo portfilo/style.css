@@ -195,6 +195,7 @@
 
 .menu {
     display: none;
+    transition: all .55s ease-in-out;
 }
 
 #close {
