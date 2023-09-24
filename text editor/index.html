@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Text Editor</title>
+        <link rel="icon" href="media/logo.svg" type="image/x-icon" />
+        <link rel="stylesheet" href="public/style.css">
+    </head>
+    <body id="body">
+        <header id="header">
+            <a href="index.html"><img src="media/logo.svg" class="img"/></a>
+            <div class="text-align" id="text-left">
+                <button class="left" id="left">Left</button>
+                <button class="left" id="center">Center</button>
+                <button class="left" id="right">Right</button>
+            </div>
+            <div class="text-align" id="text-center">
+                    <div class="dropdown" id="2column-1">
+                        <button class="dropbtn">Font</button>
+                        <div class="dropdown-content">
+                            <a id="sans-serif">sans-serif</a>
+                            <a id="serif">serif</a>
+                            <a id="Arial">Arial (sans-serif)</a>
+                            <a id="Arial Black">Arial Black (sans-serif)</a>
+                            <a id="Verdana">Verdana (sans-serif)</a>
+                            <a id="Tahoma">Tahoma (sans-serif)</a>
+                            <a id="Trebuchet MS">Trebuchet MS (sans-serif)</a>
+                            <a id="Times New Roman">Times New Roman (serif)</a>
+                            <a id="Georgia">Georgia (serif)</a>
+                            <a id="courier New">Courier New (monospace)</a>
+                            <a id="Brush Script MT">Brush Script MT (cursive)</a>
+                            <a id="Helvetica">Helvetica (sans-serif)</a>
+                            <a id="Impact">Impact (sans-serif)</a>
+                            <a id="Grill Sans">Gill Sans (sans-serif)</a>
+                        </div>
+                    </div>                      
+                    <div class="dropdown" id="2column-2">
+                        <button class="center" id="sizebtn">Size</button>
+                        <div class="size-content">
+                            <input type="number" id="size-number" placeholder="Type Here...">
+                            <a id="11">11</a>
+                            <a id="15">15</a>
+                            <a id="18">18</a>
+                            <a id="20">20</a>
+                            <a id="24">24</a>
+                            <a id="27">27</a>
+                            <a id="30">30</a>
+                            <a id="34">34</a>
+                            <a id="38">38</a>
+                            <a id="40">40</a>
+                        </div>
+                    </div>
+                <button class="center" id="bold">Bold</button>
+                <button class="center" id="italic">Italic</button>
+            </div>
+            <div class="text-align" id="right-border">
+                <div class="colors-div">
+                    <button id="colors" class="colors">Colors</button>
+                    <div class="color-content">
+                        <input type="text" id="color-input" placeholder="Type color...">
+                    </div>
+                </div>
+                <div class="some-colors">
+                    <button id="blue">blue</button>
+                    <button id="red">Red</button>
+                    <button id="green">Green</button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <textarea id="myTextarea" class="textarea" placeholder="Type Here..."></textarea>
+        </main>
+    </body>
+    <script src="public/main.js"></script>
+</html>
